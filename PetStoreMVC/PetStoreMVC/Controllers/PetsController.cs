@@ -14,12 +14,14 @@ namespace PetStoreMVC.Controllers
     {
         private PetStoreContext db = new PetStoreContext();
 
+        //available for all users
         // GET: Pets
         public ActionResult Index()
         {
             return View(db.Pets.ToList());
         }
 
+        //available for all users
         // GET: Pets/Details/5
         public ActionResult Details(int? id)
         {
@@ -35,12 +37,14 @@ namespace PetStoreMVC.Controllers
             return View(pet);
         }
 
+        //only available for admins
         // GET: Pets/Create
         public ActionResult Create()
         {
             return View();
         }
 
+        //only available for admins
         // POST: Pets/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -57,7 +61,8 @@ namespace PetStoreMVC.Controllers
 
             return View(pet);
         }
-
+        
+        //only available for admins
         // GET: Pets/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -73,6 +78,7 @@ namespace PetStoreMVC.Controllers
             return View(pet);
         }
 
+        //only available for admins
         // POST: Pets/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -89,6 +95,7 @@ namespace PetStoreMVC.Controllers
             return View(pet);
         }
 
+        //only available for admins
         // GET: Pets/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -104,6 +111,7 @@ namespace PetStoreMVC.Controllers
             return View(pet);
         }
 
+        //only available for admins
         // POST: Pets/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
