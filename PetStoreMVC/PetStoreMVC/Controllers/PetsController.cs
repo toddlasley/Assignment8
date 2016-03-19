@@ -15,6 +15,7 @@ namespace PetStoreMVC.Controllers
         private PetStoreContext db = new PetStoreContext();
 
         //available for all users
+        //"Inventory"
         // GET: Pets
         public ActionResult Index()
         {
@@ -63,7 +64,7 @@ namespace PetStoreMVC.Controllers
             {
                 db.Pets.Add(pet);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Manage");
             }
 
             return View(pet);
@@ -97,7 +98,7 @@ namespace PetStoreMVC.Controllers
             {
                 db.Entry(pet).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Manage");
             }
             return View(pet);
         }
