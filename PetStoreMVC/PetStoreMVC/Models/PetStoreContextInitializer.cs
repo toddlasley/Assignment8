@@ -21,6 +21,26 @@ namespace PetStoreMVC.Models
 
                 }
             );
+
+            context.Pets.Add(
+                new Pet()
+                {
+                    Description = "Goldfish",
+                    DateReceived = new DateTime(12 / 20 / 08),
+                    Quantity = 10,
+                    Price = 14.99
+                }
+            );
+
+            context.Pets.Add(
+                new Pet()
+                {
+                    Description = "Fat Cat",
+                    DateReceived = new DateTime(09 / 26 / 01),
+                    Quantity = 1,
+                    Price = 0.99
+                }
+            );            
         }
     }
 }
