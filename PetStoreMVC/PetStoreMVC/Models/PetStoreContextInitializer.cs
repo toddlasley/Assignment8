@@ -15,7 +15,8 @@ namespace PetStoreMVC.Models
             context.Pets.Add(
                 new Pet()
                 {
-                    Description = "German Shepherd",
+                    Name = "German Shepherd",
+                    Description = "Cu vide legere usu. In tation meliore sed, mollis consectetuer est at, eum ne augue verterem necessitatibus. No nam esse tibique petentium, ad expetenda democritum cum. Percipitur accommodare eu est, mea putent regione epicuri in, falli ocurreret voluptaria ad sit.",
                     DateReceived = "2012/08/20",
                     Quantity = 3,
                     Price = 150.99
@@ -26,7 +27,8 @@ namespace PetStoreMVC.Models
             context.Pets.Add(
                 new Pet()
                 {
-                    Description = "Golden Retriever",
+                    Name = "Golden Retriever",
+                    Description = "Cu vide legere usu. In tation meliore sed, mollis consectetuer est at, eum ne augue verterem necessitatibus. No nam esse tibique petentium, ad expetenda democritum cum. Percipitur accommodare eu est, mea putent regione epicuri in, falli ocurreret voluptaria ad sit.",
                     DateReceived = "2011/03/14",
                     Quantity = 2,
                     Price = 170.99
@@ -37,7 +39,8 @@ namespace PetStoreMVC.Models
             context.Pets.Add(
                 new Pet()
                 {
-                    Description = "Goldfish",
+                    Name = "Goldfish",
+                    Description = "Cu vide legere usu. In tation meliore sed, mollis consectetuer est at, eum ne augue verterem necessitatibus. No nam esse tibique petentium, ad expetenda democritum cum. Percipitur accommodare eu est, mea putent regione epicuri in, falli ocurreret voluptaria ad sit.",
                     DateReceived = "2014/03/13",
                     Quantity = 3,
                     Price = 2.99
@@ -48,7 +51,8 @@ namespace PetStoreMVC.Models
             context.Pets.Add(
                 new Pet()
                 {
-                    Description = "Fat Cat",
+                    Name = "Fat Cat",
+                    Description = "Cu vide legere usu. In tation meliore sed, mollis consectetuer est at, eum ne augue verterem necessitatibus. No nam esse tibique petentium, ad expetenda democritum cum. Percipitur accommodare eu est, mea putent regione epicuri in, falli ocurreret voluptaria ad sit.",
                     DateReceived = "2001/01/01",
                     Quantity = 1,
                     Price = 0.99

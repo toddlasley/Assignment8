@@ -10,6 +10,8 @@ namespace PetStoreMVC.Models
     {
         public Int32 ID { get; set; }
 
+        public string Name { get; set; }
+
         public string Description { get; set; }
 
         [Display(Name = "Date Received")]
