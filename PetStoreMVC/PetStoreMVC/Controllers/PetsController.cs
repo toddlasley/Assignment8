@@ -22,6 +22,13 @@ namespace PetStoreMVC.Controllers
         }
 
         //available for all users
+        // GET: Pets
+        public ActionResult Manage()
+        {
+            return View(db.Pets.ToList());
+        }
+
+        //available for all users
         // GET: Pets/Details/5
         public ActionResult Details(int? id)
         {
