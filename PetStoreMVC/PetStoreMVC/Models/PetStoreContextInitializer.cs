@@ -40,7 +40,9 @@ namespace PetStoreMVC.Models
                     Quantity = 1,
                     Price = 0.99
                 }
-            );            
+            );
+
+            context.SaveChanges();     
         }
     }
 }
