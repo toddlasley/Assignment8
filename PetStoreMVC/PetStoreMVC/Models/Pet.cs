@@ -18,6 +18,7 @@ namespace PetStoreMVC.Models
 
         public int Quantity { get; set; }
 
-        public decimal Price { get; set; }
+        [DataType(DataType.Currency)]
+        public double Price { get; set; }
     }
 }
