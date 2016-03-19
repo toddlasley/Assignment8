@@ -13,8 +13,9 @@ namespace PetStoreMVC.Models
         public string Description { get; set; }
 
         [Display(Name = "Date Received")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yy}")]
-        public DateTime DateReceived { get; set; }
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}")]
+        public string DateReceived { get; set; }
 
         public int Quantity { get; set; }
 

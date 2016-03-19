@@ -7,6 +7,7 @@ using System.Web;
 namespace PetStoreMVC.Models
 {
     //not for production just needed to Seed the Database
+    //for demo purposes
     public class PetStoreContextInitializer : DropCreateDatabaseAlways<PetStoreContext>
     {
         protected override void Seed(PetStoreContext context)
@@ -15,7 +16,7 @@ namespace PetStoreMVC.Models
                 new Pet()
                 {
                     Description = "German Shepherd",
-                    DateReceived = new DateTime(03/14/05),
+                    DateReceived = "2012/08/20",
                     Quantity = 3,
                     Price = 150.99
 
@@ -25,10 +26,22 @@ namespace PetStoreMVC.Models
             context.Pets.Add(
                 new Pet()
                 {
+                    Description = "Golden Retriever",
+                    DateReceived = "2011/03/14",
+                    Quantity = 2,
+                    Price = 170.99
+
+                }
+            );
+
+            context.Pets.Add(
+                new Pet()
+                {
                     Description = "Goldfish",
-                    DateReceived = new DateTime(12 / 20 / 08),
-                    Quantity = 10,
-                    Price = 14.99
+                    DateReceived = "2014/03/13",
+                    Quantity = 3,
+                    Price = 2.99
+
                 }
             );
 
@@ -36,13 +49,14 @@ namespace PetStoreMVC.Models
                 new Pet()
                 {
                     Description = "Fat Cat",
-                    DateReceived = new DateTime(09 / 26 / 01),
+                    DateReceived = "2001/01/01",
                     Quantity = 1,
                     Price = 0.99
+
                 }
             );
 
-            context.SaveChanges();     
+            context.SaveChanges();
         }
     }
 }
