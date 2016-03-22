@@ -12,6 +12,16 @@ namespace PetStoreMVC.Models
     {
         protected override void Seed(PetStoreContext context)
         {
+            if (context.Database == null)
+            {
+                throw new Exception("Database is null");
+            }
+
+            if (context.Pets.Any())
+            {
+                return;
+            }
+
             context.Pets.Add(
                 new Pet()
                 {
