@@ -8,7 +8,7 @@ namespace PetStoreMVC.Models
 {
     //not for production just needed to Seed the Database
     //for demo purposes
-    public class PetStoreContextInitializer : DropCreateDatabaseAlways<PetStoreContext>
+    public class PetStoreContextInitializer : CreateDatabaseIfNotExists<PetStoreContext>
     {
         protected override void Seed(PetStoreContext context)
         {
