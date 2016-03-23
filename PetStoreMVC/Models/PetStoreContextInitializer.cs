@@ -6,8 +6,6 @@ using System.Web;
 
 namespace PetStoreMVC.Models
 {
-    //not for production just needed to Seed the Database
-    //for demo purposes
     public class PetStoreContextInitializer : DropCreateDatabaseIfModelChanges<PetStoreContext>
     {
         protected override void Seed(PetStoreContext context)
