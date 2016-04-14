@@ -9,7 +9,7 @@ namespace PetStoreMVC.Models
     public class PetStoreContext : DbContext
     {
 
-        public PetStoreContext() : base("SQLAzureConnection")
+        public PetStoreContext() : base("AzureSQLConnection")
         {
             Database.SetInitializer<PetStoreContext>(new DropCreateDatabaseIfModelChanges<PetStoreContext>());
         }
